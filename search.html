@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset = "UTF-8">
+    <script src = "./pokemon.js" defer></script>
+    <link rel = "stylesheet" href = "style.css">
+    <meta name = "viewpoint" content = "width = divice-width, intital-scale 1.0">
+    <title>Brock's Pokedex</title>
+   </head>
+
+<body>
+    <main class="main">
+    <header class="headerHome"> <div class="container">
+    <div class="logoWrap">
+        <!-- <img src="./assets/pokeball.svg" alt="pokeball"/>  -->
+    <h1>Pokedex</h1>
+    </div> <div class="searchWrapper"> 
+    <div class="searchWrap">
+    <!-- <img src="./assets/search.svg" alt="search icon" class="searchIcon"/> -->
+    <input id = "searchInput" type = "text" placeholder = "search" class = "searchInput body3-fonts"> 
+    <!-- <img src = "./assets/cross.svg" alt = "crossIcon" class = "searchIcon" id = "searchIcon"> -->
+    <div class = sortWrapper> 
+    <div class = "sortWrap">
+        <!-- <img src = "./assets/sorting.svg" alt ="sorting" class = "sortIcon" id = "sortIcon"> -->
+    </div>
+    <div class = 'filterWrapper'>
+        <p class = "body2fonts">filter by:</p>
+        <div class = "filterWrap">
+            <div> <input type = "radio" id = "number" name  = "filter" value = "number" checked/>
+            <label for= "number" class = "body3-fonts" >number</label></div>
+            <div>
+                <input type = "radio" id = "name" name = "filters" value = "name"/> 
+                <label for = "name" class  = "body3-fonts">name</label>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> 
+</header>
+<section class = "pokemonList">
+    <div class = "container">
+    <div class = "list-wrapper"></div>
+    </div>
+    <div class = "notFoundMessage"></div>
+</section>
+    </main>
+ </body>
+ </html>
